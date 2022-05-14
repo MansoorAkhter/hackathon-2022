@@ -60,11 +60,11 @@ const Signup = () => {
           <div className="signup-content">
             <div className="signup-form">
               <h2 className="form-title">SignUp</h2>
-              <form method="POST" className="userform">
+              <form className="userform">
                 <input type="text" value={user.name} onChange={inputsHandler} placeholder="Your Name" autoComplete="off" name="name" id="name" />
                 <input type="email" value={user.email} onChange={inputsHandler} placeholder="Your Email" autoComplete="off" name="email" id="email" />
-                <input type="text" value={user.phone} onChange={inputsHandler} placeholder="Phone Number" autoComplete="off" name="phone" id="phone" />
-                <input type="text" value={user.profession} onChange={inputsHandler} placeholder="Your Profession" autoComplete="off" name="profession" id="profession" />
+                <input type="text" value={user.phone} onChange={inputsHandler} placeholder="Enter CNIC" autoComplete="off" name="phone" id="phone" />
+             
                 <input type="password" value={user.password} onChange={inputsHandler} placeholder="Password" autoComplete="off" name="password" id="password" />
                 <button className="registerBtn" value="register" onClick={PostData}>register</button>
               </form>

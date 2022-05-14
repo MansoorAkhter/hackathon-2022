@@ -7,6 +7,7 @@ h2 {
 }
 /* .signup-content{
 } */
+
 .signup-form {
   display: flex;
   flex-direction: column;
@@ -55,6 +56,7 @@ h2 {
 .contact {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 .contact_info_item {
   display: flex;
@@ -157,6 +159,7 @@ textarea {
   color: #fff;
   font-weight: 500;
   border: none;
+  margin-top: 30px;
 }
 
 .home-view-courses:hover {
@@ -313,6 +316,16 @@ textarea {
 }
 
 /* Admin DashBoard */
+.admin-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-dashboard-heading{
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
 .modal-inputs {
   display: flex;
   flex-direction: column;
@@ -326,6 +339,14 @@ textarea {
 }
 
 /* View Courses */
+.viewCourses-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .course-container {
   width: 100vw;
   height: 100%;

@@ -24,7 +24,7 @@ const ViewCourses = () => {
 
   return (
     <div className="courses-container">
-      <h1>View Courses</h1>
+      <h1 className="viewCourses-heading">View Courses</h1>
       <div
         style={{
           display: "flex",

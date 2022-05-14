@@ -140,6 +140,7 @@ const AdminDashboard = () => {
 
   return (
     <div className="contact_main">
+    <h1 className="admin-dashboard-heading admin-container">Admin Dashboard</h1>
       <div className="contact">
         <div className="contact_info_item">
           <BsKey style={{ fontSize: "37px ", color: "white" }} />
@@ -191,7 +192,7 @@ const AdminDashboard = () => {
             onChange={(e) => setResetemail(e.target.value)}
           />
           <input
-            type="text"
+            type="password"
             placeholder="Current Password"
             name="currentPassword"
             id="currentPassword"
@@ -200,7 +201,7 @@ const AdminDashboard = () => {
             onChange={(e) => setResetPassword(e.target.value)}
           />
           <input
-            type="text"
+            type="password"
             placeholder="New Password"
             name="email"
             id="email"
@@ -235,7 +236,7 @@ const AdminDashboard = () => {
             onChange={(e) => setadminEmail(e.target.value)}
           />
           <input
-            type="text"
+            type="password"
             placeholder="Enter Password"
             name="currentPassword"
             id="currentPassword"
