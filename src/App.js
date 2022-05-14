@@ -9,6 +9,9 @@ import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import ErrorPage from "./components/ErrorPage";
 import "./App.css";
+import ViewCourses from "./components/ViewCourses";
+import AdminLogin from "./components/AdminLogin";
+import AdminDashboard from "./components/AdminDashboard";
 
 const App = () => {
   return (
@@ -21,6 +24,10 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/viewcourses" element={<ViewCourses/>}/>
+        <Route path="/adminlogin" element={<AdminLogin/>}/>
+        <Route path="/admindashboard" element={<AdminDashboard/>}/>
+        
       </Routes>
     </div>
   );

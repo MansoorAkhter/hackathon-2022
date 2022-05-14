@@ -14,15 +14,7 @@ const Login = () => {
   const loginUser = async (e) => {
     e.preventDefault();
 
-    // const res = await fetch("/login", {
-    //   method: "POST",
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({ email, password })
-    // });
-
-
+  
     const res = await axios.post('http://localhost:4000/login', {
       email: email,
       password: password
@@ -30,7 +22,7 @@ const Login = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      // body: JSON.stringify({ email, password })
+     
     })
 
     const data = res;
