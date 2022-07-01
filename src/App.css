@@ -1,12 +1,12 @@
 * {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 h2 {
   font-weight: 700;
   font-size: 40px;
 }
-/* .signup-content{
-} */
 
 .signup-form {
   display: flex;
@@ -138,62 +138,88 @@ textarea {
 /* HOME PAGE */
 .home-page {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  height: 95vh;
-
-  background: rgb(255, 255, 255);
-  /* background: linear-gradient(
-    90deg,
-    rgba(0, 189, 255, 0.31976540616246496) 50%,
-    rgba(233, 233, 233, 0.6418942577030813) 50%
-  ); */
-}
-.home-view-courses {
-  text-decoration: none;
-  background-color: rgb(0, 162, 255);
-  padding: 15px 25px;
-  border-radius: 50px;
-  color: #fff;
-  font-weight: 500;
-  border: none;
-  margin-top: 30px;
-}
-
-.home-view-courses:hover {
-  background-color: #fff;
-  font-weight: 550;
-  color: rgb(0, 162, 255);
-  border: 2px solid rgb(0, 162, 255);
-}
-
-.home-facebook-Feed {
-  display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-right: 40px;
+  height: 92.1vh;
+  background: conic-gradient(
+    from 281deg at 34% 49%,
+    rgb(0, 223, 45) 0%,
+    rgba(0, 57, 63, 1) 41%,
+    rgba(54, 159, 244, 1) 67%,
+    rgba(0, 57, 63, 1) 86%,
+    rgb(0, 213, 53) 100%
+  );
 }
+
 .home-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 90%;
-  width: 100%;
+  width: 50%;
+  border-radius: 40% 60% 60% 40% / 34% 38% 62% 66%;
+  /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
 }
 .home-div > p {
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 5px;
   font-weight: 600;
-  color: rgb(0, 162, 255);
+  color: white;
 }
 .home-div > h1 {
   letter-spacing: 2px;
   font-size: 50px;
   font-weight: 900;
   color: black;
+}
+.home-view-courses {
+  background-image: linear-gradient(
+    to right,
+    #005595,
+    #00d0ff,
+    #00d0ff,
+    #005595
+  );
+  width: 200px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.home-view-courses:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.home-facebook-Feed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 63%;
+  width: auto;
+  border-radius: 15px;
 }
 
 /* ABOUT */
@@ -316,12 +342,12 @@ textarea {
 }
 
 /* Admin DashBoard */
-.admin-container{
+.admin-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.admin-dashboard-heading{
+.admin-dashboard-heading {
   font-weight: 900;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -339,35 +365,65 @@ textarea {
 }
 
 /* View Courses */
-.viewCourses-heading{
+.viewCourses-heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 800;
+  font-weight: 700;
   margin-top: 30px;
   margin-bottom: 30px;
+  color: #fff;
+  text-transform: uppercase;
 }
-.course-container {
+.courses-container {
   width: 100vw;
-  height: 100%;
+  height: 92.1vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  background: conic-gradient(
+    from 281deg at 34% 49%,
+    rgb(0, 223, 45) 0%,
+    rgba(0, 57, 63, 1) 41%,
+    rgba(54, 159, 244, 1) 67%,
+    rgba(0, 57, 63, 1) 86%,
+    rgb(0, 213, 53) 100%
+  );
 }
 .course {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  flex: 1
+  width: 50%;
+  height: auto;
+  flex: 1;
+  padding: 30px;
 }
 .new-course-container {
-  background-color: rgb(0, 162, 255);
+  /* background-color: rgb(0, 162, 255); */
+  height: 100%;
+  width: 100%;
   padding: 30px;
   border-radius: 5px;
   color: #fff;
-  margin: 20px;
+  /* From https://css.glass */
+  background: rgba(186, 186, 186, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+.new-course-container > h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.new-course-container > h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.new-course-container > h6 {
+  font-weight: normal;
+  font-size: 15px;
 }
 .new-course-container > button {
   border: none;

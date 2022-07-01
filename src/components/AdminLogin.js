@@ -19,7 +19,7 @@ const AdminLogin = () => {
         const user = userCredential.user;
         alert("User Sign In successfully")
         navigate('/admindashboard')
-        
+
         // ...
       })
       .catch((error) => {

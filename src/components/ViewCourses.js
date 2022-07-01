@@ -36,7 +36,7 @@ const ViewCourses = () => {
             <div className="course">
               <div className="new-course-container">
                 <h1>{course.courseName}</h1>
-                <h4>{course.courseDuration}</h4>
+                <h4>Duration: {course.courseDuration}</h4>
                 <h6>{course.courseFaculty}</h6>
                 <button>Enroll</button>
               </div>

@@ -22,14 +22,13 @@ const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse nav-btns" id="navbarSupportedContent" style={{fontSize: 18}}>
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <div className="collapse navbar-collapse nav-btns" id="navbarSupportedContent" style={{fontSize: 18, fontWeight: 500}}>
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0"> 
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
-                  Home
+                <Link className="nav-link" to="/viewcourses">
+                View Courses
                 </Link>
               </li>
-           
               <li className="nav-item">
                 <Link className="nav-link" to="/login">
                   Login
@@ -37,7 +36,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/signup ">
-                  Sign Up
+                  SignUp
                 </Link>
               </li>
             </ul>
